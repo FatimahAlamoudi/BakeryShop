@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Poppins&display=swap');
+:root{
+--background-color: #F0F1EC;
+--primary-color: #4A6A72;
+--secondary-color: #fff;
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    /* font-family: 'Gwendolyn', cursive;
+    font-family: 'Poppins', sans-serif; */
+}
+
+.header{
+    color: white;
+    font-size: 1.5em;
+    outline: none;
+ }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gwendolyn', cursive;
+    font-weight: bold;
+    padding: 1.5em;
+    background-color: rgba(255,255,255,0.6);
+}
+
+
+.brand-title{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    color: var(--primary-color);
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 1rem;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.navbar-links li a:hover{
+   text-decoration: underline;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin: 1rem;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_content{
+    color: var(--primary-color);
+    margin: 1em;
+    text-align: center;
+
+}
+.hero_content h1{
+    font-size: 3.5rem;
+    font-family: 'Gwendolyn', cursive;
+    font-weight: bold;
+}
+
+.span{
+    display: inline-block;
+    border-bottom: .5rem solid var(--primary-color);
+    width: 10rem;
+}
+
+.hero_content p{
+    font-size: 1.7rem;
+    line-height: 1.5em;
+}
+.hero_picture{
+    height: 50vh;
+    background-image: url('./Images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 1em 2em;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .35s;
+    position: relative;
+    margin-top: .5em;
+    text-align: center;
+
+}
+
+  .btn:hover{
+    background-color: #608791;
+    transition: all .35s;
+    color: var(--background-color);
+    
+  }
+  
+  .btn:hover:after{
+    width: 100%;
+  }
+
+  .about{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .about_pic1{
+    height: 50vh;
+    background-image: url('./Images/blueberry\ cake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+  }
+
+  .about_pic2{
+    height: 50vh;
+    background-image: url('./Images/fruit\ cake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; 
+  }
+  .about_story{
+      text-align: center;
+  }
+
+  .about_story h2{
+    font-size: 3rem;
+    font-family: 'Gwendolyn', cursive;
+    color: var(--primary-color);
+  }
+
+  .about_story p{
+    font-size: 1.7rem;
+    line-height: 1.5em;
+  }
+
+  .category .button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+.category .button-container div{
+    margin: 1rem;
+    color: var(--primary-color);
+    font-family: 'Gwendolyn', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.category .button-container div.active{
+    border-bottom: 1px solid var(--primary-color);
+}
+
+
+/* .category .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+} */
+
+.category .image-container .box{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border-radius: 0rem 0rem .5rem .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+    justify-content: center;
+
+}
+/* 
+.category .image-container .box .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: column;
+
+} */
+
+.category .image-container .box .product_img{
+    height: 25em;
+}
+.category .image-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category .image-container .box h3 {
+    font-size: 2.5rem;
+    font-family: 'Gwendolyn', cursive;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.category .image-container .box p {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1rem;
+}
+
+.category .image-container .box .price{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    color: var(--primary-color);
+}
+
+.category .image-container .box .price p{
+    font-size: 1.7rem;
+}
+
+.category .image-container .box .price .icon{
+    padding: 1.5rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.category .image-container .box .price .icon:hover{
+    background-color: #608791;
+    transition: all .35s;
+    color: var(--background-color);
+    
+  }
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.contactus h2{
+    font-size: 2.5rem;
+    font-family: 'Gwendolyn', cursive;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    }
+
+    .contactus h2::after{
+        content: '';
+        border-bottom: .5rem solid var(--primary-color);
+        width: 10ch;
+        display: block;
+        margin: 1em auto;
+    }
+
+ 
+ 
+
+   .form_pic1{
+        height: 50vh;
+        background-image: url('./Images/bg2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+   }
+
+  
+
+   .form_input{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+   }
+
+   .form_input input{
+       background-color: var(--background-color);
+       padding: 1em 3em;
+       border: 0;
+       outline: 0;
+       border-bottom: 2px solid  var(--primary-color);
+       margin-bottom: 1em;
+   }
+
+   .form_input textarea{
+        background-color: var(--background-color);
+        border: 0;
+        outline: 0;
+        border-bottom: 2px solid  var(--primary-color);
+}
+
+   .form_label{
+        font-size: 1.5rem;
+        font-family: 'Gwendolyn', cursive;
+   }
+
+   footer{
+       justify-content: center;
+       align-items: center;
+       background-color: var(--primary-color);
+   }
+
+   .share{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .share a{
+        background-color: var(--background-color);
+        color: var(--primary-color);
+    }
+
+    .credit{
+      color:#fff;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-family: 'Gwendolyn', cursive;
+  }
+
+
+
+
+
+
+
+@media (max-width: 660px)
+{
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+}
+
+
+@media (min-width: 750px) {
+    .hero{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .hero_picture{
+        order: 2;
+        background-image: url('./Images/bg1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+    }
+
+    .hero_content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        order: 1;
+        text-align: left;
+        justify-content: center;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .btn{
+        width: 10rem;
+        text-align: center;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: row;
+        height: 60vh;
+    }
+
+    .about_pic1{
+       width: 75vw;
+       height: 100%;
+       background-size: cover;
+    }
+
+    .about_story1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50vw;
+        height: 100%;
+        text-align: left;
+        margin: 1rem;
+        font-size: .5rem;
+    }
+
+
+    .gurantee{
+        display: flex;
+        flex-direction: row;
+        height: 60vh;
+    }
+
+    .about_pic2{
+        order: 2;
+        width: 75vw;
+        height: 100%;
+        background-size: cover;
+     }
+ 
+     .about_story2{
+         order: 1;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         width: 50vw;
+         height: 100%;
+         text-align: left;
+         margin: 1rem;
+         font-size: .5rem;
+     }
+
+     .image-container {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 0;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .image-container .box{
+        flex: 1 0 20rem;
+    }
+
+
+
+}
+
+@media(min-width: 800px){
+    .form_pic2{
+        height: 100%;
+        background-image: url('./Images/sour\ dough.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;  
+        grid-area: pic2;
+   }
+
+   .form_pic3{
+        height: 100%;
+        background-image: url('./Images/apple\ pie.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%; 
+        grid-area: pic3;
+   }
+
+    .form {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr .5fr .5fr;
+        grid-template-areas: 'form   pic1 pic2'
+                              'form  pic1  pic2'
+                              'form  pic1  pic3'
+                              'form  pic1 pic3';
+        gap: 1rem;
+        
+    }
+    .form_pic1{
+        height: 100%;
+        grid-area: pic1;
+    }
+    .form_input{
+        grid-area: form;
+    }
+    
+}
+
+@media (min-width: 500px){
+    .share{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+
+    
+}
+

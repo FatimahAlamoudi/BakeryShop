@@ -369,6 +369,11 @@ body{
         color: var(--primary-color);
     }
 
+    .social{
+        width: 10rem;
+        height: 3rem;
+    }
+
     .credit{
       color:#fff;
       text-align: center;

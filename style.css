@@ -8,7 +8,7 @@
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+
 }
 
 body{
@@ -19,6 +19,10 @@ body{
     overflow-x: hidden;
     /* font-family: 'Gwendolyn', cursive;
     font-family: 'Poppins', sans-serif; */
+}
+
+section{
+    margin-block: 1em;
 }
 
 .header{
@@ -97,7 +101,7 @@ body{
 
 }
 .hero_content h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: 'Gwendolyn', cursive;
     font-weight: bold;
 }
@@ -109,7 +113,7 @@ body{
 }
 
 .hero_content p{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     line-height: 1.5em;
 }
 .hero_picture{
@@ -138,9 +142,9 @@ body{
     background-color: #608791;
     transition: all .35s;
     color: var(--background-color);
-    
+
   }
-  
+
   .btn:hover:after{
     width: 100%;
   }
@@ -164,20 +168,20 @@ body{
     background-image: url('./Images/fruit\ cake.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%; 
+    width: 100%;
   }
   .about_story{
       text-align: center;
   }
 
   .about_story h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Gwendolyn', cursive;
     color: var(--primary-color);
   }
 
   .about_story p{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     line-height: 1.5em;
   }
 
@@ -206,18 +210,10 @@ body{
 }
 
 
-/* .category .image-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-} */
-
 .category .image-container .box{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin-inline: 1rem;
     border-radius: 0rem 0rem .5rem .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     overflow: hidden;
@@ -225,9 +221,10 @@ body{
     text-align: center;
     background-color: #fff;
     justify-content: center;
+    gap: 1em;
 
 }
-/* 
+/*
 .category .image-container .box .info{
     display: flex;
     align-items: center;
@@ -238,23 +235,24 @@ body{
 } */
 
 .category .image-container .box .product_img{
-    height: 25em;
+    height: 15em;
 }
 .category .image-container .box img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: .5rem .5rem 0rem 0rem ;
 }
 
 .category .image-container .box h3 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family: 'Gwendolyn', cursive;
     font-weight: bold;
     color: var(--primary-color);
 }
 
 .category .image-container .box p {
-    font-size: 2rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     margin: 1rem;
 }
@@ -285,7 +283,7 @@ body{
     background-color: #608791;
     transition: all .35s;
     color: var(--background-color);
-    
+
   }
 
 
@@ -312,8 +310,8 @@ body{
         margin: 1em auto;
     }
 
- 
- 
+
+
 
    .form_pic1{
         height: 50vh;
@@ -323,7 +321,7 @@ body{
         width: 100%;
    }
 
-  
+
 
    .form_input{
         margin-top: 2rem;
@@ -493,7 +491,7 @@ body{
         height: 100%;
         background-size: cover;
      }
- 
+
      .about_story2{
          order: 1;
          display: flex;
@@ -515,7 +513,7 @@ body{
     }
 
     .image-container .box{
-        flex: 1 0 20rem;
+        flex: 1 0 10rem;
     }
 
 
@@ -528,7 +526,7 @@ body{
         background-image: url('./Images/sour\ dough.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;  
+        width: 100%;
         grid-area: pic2;
    }
 
@@ -537,7 +535,7 @@ body{
         background-image: url('./Images/apple\ pie.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%; 
+        width: 100%;
         grid-area: pic3;
    }
 
@@ -550,7 +548,7 @@ body{
                               'form  pic1  pic3'
                               'form  pic1 pic3';
         gap: 1rem;
-        
+
     }
     .form_pic1{
         height: 100%;
@@ -559,7 +557,7 @@ body{
     .form_input{
         grid-area: form;
     }
-    
+
 }
 
 @media (min-width: 500px){
@@ -570,6 +568,6 @@ body{
         flex-wrap: wrap;
     }
 
-    
+
 }
 
